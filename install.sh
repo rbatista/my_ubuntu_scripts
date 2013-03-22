@@ -6,9 +6,9 @@ sudo apt-get install ubuntu-restricted-extras non-free-codecs libdvdcss2 faac fa
 # essential compilation packages
 sudo apt-get install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon -y
 
-# java 7
-# sudo apt-get install openjdk-7-jdk junit4 junit4-doc gradle gradle-doc
+# git
+sudo apt-get install git git-flow -y
 
 # teminal
-sudo apt-get install guake
+sudo apt-get install guake zsh -y
 wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
