@@ -1,1 +1,1 @@
-sudo apt-get install virtualbox-ose-guest-utils virtualbox-ose-guest-x11
+sudo apt-get --yes --quiet install virtualbox-ose-guest-utils virtualbox-ose-guest-x11
