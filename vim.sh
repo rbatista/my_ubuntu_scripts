@@ -32,6 +32,9 @@ echo "set t_Co=256" > ~/.vimrc
 # fugitive
 git clone git://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive/
 
+# supertab
+git clone git@github.com:ervandew/supertab.git ~/.vim/bundle/supertab/
+
 # line numbers
 echo "set number" > ~/.vimrc
 
