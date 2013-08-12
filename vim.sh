@@ -9,7 +9,7 @@ sudo pip install --upgrade virtualenv
 # pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-echo '# pathogen' >> ~/.vimrc
+echo '" pathogen' >> ~/.vimrc
 echo 'execute pathogen#infect()' >> ~/.vimrc
 echo 'syntax on' >> ~/.vimrc
 echo 'filetype plugin ident on' >> ~/.vimrc
@@ -23,7 +23,7 @@ git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 
 # solarized
 git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
-echo '# solarized' >> ~/.vimrc
+echo '" solarized' >> ~/.vimrc
 echo 'syntax enable' >> ~/.vimrc
 echo 'set background=dark' >> ~/.vimrc
 echo 'colorscheme solarized' >> ~/.vimrc
@@ -31,7 +31,7 @@ echo '\n' >> ~/.vimrc
 
 # powerline
 git clone https://github.com/Lokaltog/powerline ~/.vim/bundle/powerline/
-echo '# Powerline' >> ~/.vimrc
+echo '" Powerline' >> ~/.vimrc
 echo 'set t_Co=256' >> ~/.vimrc
 echo '\n' >> ~/.vimrc
 
@@ -42,7 +42,7 @@ git clone git://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive/
 git clone git@github.com:ervandew/supertab.git ~/.vim/bundle/supertab/
 
 # line numbers
-echo '# numbering' >> ~/.vimrc
+echo '" numbering' >> ~/.vimrc
 echo 'set number' >> ~/.vimrc
 echo '\n' >> ~/.vimrc
 
