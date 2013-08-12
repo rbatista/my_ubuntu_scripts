@@ -17,6 +17,10 @@ echo '\n' >> ~/.vimrc
 
 # UltiSnips
 git clone git@github.com:SirVer/ultisnips.git ~/.vim/bundle/ultisnips
+echo '" UltiSnips' >> ~/.vimrc
+echo 'let g:UltiSnipsExpandTrigger="<tab>"' >> ~/.vimrc
+echo 'let g:UltiSnipsJumpForwardTrigger="<c-j>"' >> ~/.vimrc
+echo '\n' >> ~/.vimrc
 
 # ctrlp
 git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
@@ -44,6 +48,20 @@ git clone git@github.com:ervandew/supertab.git ~/.vim/bundle/supertab/
 # line numbers
 echo '" numbering' >> ~/.vimrc
 echo 'set number' >> ~/.vimrc
+echo '\n' >> ~/.vimrc
+
+# whitespaces
+echo '" Trailing Whitespaces' >> ~/.vimrc
+echo 'set list' >> ~/.vimrc
+echo 'set listchars=""' >> ~/.vimrc
+echo 'set listchars=tab:\ \' >> ~/.vimrc
+echo 'set listchars+=trail:.' >> ~/.vimrc
+echo 'set listchars+=extends:>' >> ~/.vimrc
+echo 'set listchars+=precedes:<' >> ~/.vimrc
+echo '\n' >> ~/.vimrc
+
+echo '" Kills Trailing Whitespaces' >> ~/.vimrc
+echo 'command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>' >> ~/.vimrc
 echo '\n' >> ~/.vimrc
 
 # Vim as default editor
