@@ -16,21 +16,24 @@ echo 'filetype plugin ident on' >> ~/.vimrc
 # UltiSnips
 git clone git@github.com:SirVer/ultisnips.git ~/.vim/bundle/ultisnips
 
-#ctrlp
+# ctrlp
 git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 
-#solarized
+# solarized
 git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
 echo 'syntax enable' >> ~/.vimrc
 echo 'set background=dark' >> ~/.vimrc
 echo 'colorscheme solarized' >> ~/.vimrc
 
-#powerline
+# powerline
 git clone https://github.com/Lokaltog/powerline ~/.vim/bundle/powerline/
 echo "set t_Co=256" > ~/.vimrc
 
-#fugitive
+# fugitive
 git clone git://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive/
 
-#line numbers
+# line numbers
 echo "set number" > ~/.vimrc
+
+# Vim as default editor
+export EDITOR=vim
