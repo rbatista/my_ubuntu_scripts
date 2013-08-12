@@ -40,3 +40,13 @@ echo "set number" > ~/.vimrc
 
 # Vim as default editor
 export EDITOR=vim
+
+# Configure java file type
+mkdir -p ~/.vim/ftplugin/
+touch ~/.vim/ftplugin/java.vim
+echo "setlocal tabstop=4" >> ~/.vim/ftplugin/java.vim
+echo "setlocal shiftwidth=4" >> ~/.vim/ftplugin/java.vim
+echo "setlocal expandtab" >> ~/.vim/ftplugin/java.vim
+echo "setlocal autoindent" >> ~/.vim/ftplugin/java.vim
+echo "setlocal smarttab" >> ~/.vim/ftplugin/java.vim
+echo "setlocal formatoptions=croql" >> ~/.vim/ftplugin/java.vim
