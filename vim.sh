@@ -12,7 +12,7 @@ curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen
 echo '" pathogen' >> ~/.vimrc
 echo 'execute pathogen#infect()' >> ~/.vimrc
 echo 'syntax on' >> ~/.vimrc
-echo 'filetype plugin ident on' >> ~/.vimrc
+echo 'filetype plugin indent on' >> ~/.vimrc
 echo '\n' >> ~/.vimrc
 
 # UltiSnips
