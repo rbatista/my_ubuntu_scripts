@@ -4,4 +4,4 @@ wget -qO- -O tmp.zip --no-check-certificate http://services.gradle.org/distribut
 sudo mv gradle-1.4 /opt/gradle/
 echo 'alias gg="/opt/gradle/bin/gradle --daemon"' >> ~/.profile
 source ~/.profile
-sudo update-java-alternatives -s $(update-java-alternatives -l | grep "java-1.7" | cut -d ' ' -f1)
+sudo update-java-alternatives -s $(sudo update-java-alternatives -l | grep "java-1.7" | cut -d ' ' -f1)
