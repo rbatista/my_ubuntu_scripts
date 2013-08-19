@@ -1,6 +1,6 @@
 # pre-requisites
-sudo apt-get install -y -quiet vim
-sudo apt-get install -y -quiet curl
+sudo apt-get install -y --quiet vim
+sudo apt-get install -y --quiet curl
 
 sudo apt-get install python-pip python-dev build-essential
 sudo pip install --upgrade pip
