@@ -48,6 +48,9 @@ git clone https://github.com/ervandew/supertab.git ~/.vim/bundle/supertab/
 # delimitMate
 git clone https://github.com/Raimondi/delimitMate.git ~/.vim/bundle/delimitMate/
 
+# neocomplcache
+git clone https://github.com/Shougo/neocomplcache.vim.git ~/.vim/bundle/neocomplcache
+
 # line numbers
 echo '" numbering' >> ~/.vimrc
 echo 'set number' >> ~/.vimrc
