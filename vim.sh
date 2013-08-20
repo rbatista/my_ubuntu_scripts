@@ -53,6 +53,7 @@ git clone https://github.com/Shougo/neocomplcache.vim.git ~/.vim/bundle/neocompl
 
 # tcomment_vim
 git clone https://github.com/tomtom/tcomment_vim.git~/.vim/bundle/tcomment_vim
+echo '\nlet g:neocomplcache_enable_at_startup = 1\n' >> ~/.vimrc
 
 # line numbers
 echo '" numbering' >> ~/.vimrc
