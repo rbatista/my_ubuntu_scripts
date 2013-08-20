@@ -16,7 +16,7 @@ echo 'filetype plugin indent on' >> ~/.vimrc
 echo '\n' >> ~/.vimrc
 
 # UltiSnips
-git clone git@github.com:SirVer/ultisnips.git ~/.vim/bundle/ultisnips
+git clone https://github.com/SirVer/ultisnips.git ~/.vim/bundle/ultisnips
 echo '" UltiSnips' >> ~/.vimrc
 echo 'let g:UltiSnipsExpandTrigger="<tab>"' >> ~/.vimrc
 echo 'let g:UltiSnipsJumpForwardTrigger="<c-j>"' >> ~/.vimrc
@@ -26,7 +26,7 @@ echo '\n' >> ~/.vimrc
 git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 
 # solarized
-git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
+git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
 echo '" solarized' >> ~/.vimrc
 echo 'syntax enable' >> ~/.vimrc
 echo 'set background=dark' >> ~/.vimrc
@@ -40,10 +40,13 @@ echo 'set t_Co=256' >> ~/.vimrc
 echo '\n' >> ~/.vimrc
 
 # fugitive
-git clone git://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive/
+git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive/
 
 # supertab
-git clone git@github.com:ervandew/supertab.git ~/.vim/bundle/supertab/
+git clone https://github.com/ervandew/supertab.git ~/.vim/bundle/supertab/
+
+# delimitMate
+git clone https://github.com/Raimondi/delimitMate.git ~/.vim/bundle/delimitMate/
 
 # line numbers
 echo '" numbering' >> ~/.vimrc
