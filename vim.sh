@@ -51,6 +51,9 @@ git clone https://github.com/Raimondi/delimitMate.git ~/.vim/bundle/delimitMate/
 # neocomplcache
 git clone https://github.com/Shougo/neocomplcache.vim.git ~/.vim/bundle/neocomplcache
 
+# tcomment_vim
+git clone https://github.com/tomtom/tcomment_vim.git~/.vim/bundle/tcomment_vim
+
 # line numbers
 echo '" numbering' >> ~/.vimrc
 echo 'set number' >> ~/.vimrc
