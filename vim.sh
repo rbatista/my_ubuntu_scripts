@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # pre-requisites
 sudo apt-get install -y --quiet vim
 sudo apt-get install -y --quiet curl

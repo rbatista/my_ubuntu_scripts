@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # java 7
 sudo apt-get install -y --quiet openjdk-7-jdk junit4 junit4-doc
 wget -qO- -O tmp.zip --no-check-certificate http://services.gradle.org/distributions/gradle-1.4-all.zip && unzip tmp.zip && rm tmp.zip
