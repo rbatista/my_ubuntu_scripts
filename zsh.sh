@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# pre-requisite
-sudo apt-get install git -y
-
 #zsh
 sudo apt-get install zsh -y
 
