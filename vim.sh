@@ -78,7 +78,8 @@ echo 'command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>' >> ~/.vimrc
 echo '\n' >> ~/.vimrc
 
 # Vim as default editor
-export EDITOR=vim
+echo '\n# vim as default editor\nexport EDITOR=vim' >> ~/.profile
+source ~/.profile
 
 # Configure file type
 # java
