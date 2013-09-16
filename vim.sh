@@ -28,6 +28,7 @@ echo '\n' >> ~/.vimrc
 git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 echo '"CtrP' >> ~/.vimrc
 echo 'let g:ctrlp_custom_ignore = "build\|config\|.DS_Store$\|\.git$\|\.hg$\|\.svn$\|\.class$\|\.settings$"\n' >> ~/.vimrc
+echo "autocmd! BufWritePost * :ClearAllCtrlPCaches" >> ~/.vimrc
 
 # solarized
 git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
