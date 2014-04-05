@@ -8,4 +8,4 @@ wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master
 
 # color solarized
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.terminal-solarized
-~/.terminal-solarized/solarize dark
+~/.terminal-solarized/install.sh
