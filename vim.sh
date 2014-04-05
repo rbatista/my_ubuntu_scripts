@@ -15,20 +15,21 @@ echo '" pathogen' >> ~/.vimrc
 echo 'execute pathogen#infect()' >> ~/.vimrc
 echo 'syntax on' >> ~/.vimrc
 echo 'filetype plugin indent on' >> ~/.vimrc
-echo '\n' >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
 
 # UltiSnips
 git clone https://github.com/SirVer/ultisnips.git ~/.vim/bundle/ultisnips
 echo '" UltiSnips' >> ~/.vimrc
 echo 'let g:UltiSnipsExpandTrigger="<tab>"' >> ~/.vimrc
 echo 'let g:UltiSnipsJumpForwardTrigger="<c-j>"' >> ~/.vimrc
-echo '\n' >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
 
 # ctrlp
 git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 echo '"CtrP' >> ~/.vimrc
-echo 'let g:ctrlp_custom_ignore = "build\|config\|.DS_Store$\|\.git$\|\.hg$\|\.svn$\|\.class$\|\.settings$"\n' >> ~/.vimrc
+echo 'let g:ctrlp_custom_ignore = "build\|config\|.DS_Store$\|\.git$\|\.hg$\|\.svn$\|\.class$\|\.settings$"' >> ~/.vimrc
 echo "autocmd! BufWritePost * :ClearAllCtrlPCaches" >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
 
 # solarized
 git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
@@ -36,13 +37,13 @@ echo '" solarized' >> ~/.vimrc
 echo 'syntax enable' >> ~/.vimrc
 echo 'set background=dark' >> ~/.vimrc
 echo 'colorscheme solarized' >> ~/.vimrc
-echo '\n' >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
 
 # powerline
 git clone https://github.com/Lokaltog/powerline ~/.vim/bundle/powerline/
 echo '" Powerline' >> ~/.vimrc
 echo 'set t_Co=256' >> ~/.vimrc
-echo '\n' >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
 
 # fugitive
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive/
@@ -64,7 +65,7 @@ git clone https://github.com/tomtom/tcomment_vim.git ~/.vim/bundle/tcomment_vim
 # line numbers
 echo '" numbering' >> ~/.vimrc
 echo 'set number' >> ~/.vimrc
-echo '\n' >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
 
 # whitespaces
 echo '" Trailing Whitespaces' >> ~/.vimrc
@@ -74,14 +75,14 @@ echo 'set listchars=tab:\ \' >> ~/.vimrc
 echo 'set listchars+=trail:.' >> ~/.vimrc
 echo 'set listchars+=extends:>' >> ~/.vimrc
 echo 'set listchars+=precedes:<' >> ~/.vimrc
-echo '\n' >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
 
 echo '" Kills Trailing Whitespaces' >> ~/.vimrc
 echo 'command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>' >> ~/.vimrc
-echo '\n' >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
 
 # Vim as default editor
-echo '\n# vim as default editor\nexport EDITOR=vim' >> ~/.profile
+echo -e '\n# vim as default editor\nexport EDITOR=vim' >> ~/.profile
 source ~/.profile
 
 # Configure file type
