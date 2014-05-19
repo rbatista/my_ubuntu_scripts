@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# pre
+sudo apt-get install -y --quiet unzip
 # java 7
 sudo apt-get install -y --quiet openjdk-7-jdk junit4 junit4-doc
 wget -qO- -O tmp.zip --no-check-certificate http://services.gradle.org/distributions/gradle-1.7-all.zip && unzip tmp.zip && rm tmp.zip
