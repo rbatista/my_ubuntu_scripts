@@ -11,5 +11,5 @@ git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.termi
 ~/.terminal-solarized/install.sh
 
 # reverse history
-echo -e '\n" revese history' >> ~/.zshrc
+echo -e '\n# revese history' >> ~/.zshrc
 echo "bindkey '^R' history-incremental-pattern-search-backward" >> ~/.zshrc
