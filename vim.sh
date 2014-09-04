@@ -22,6 +22,7 @@ git clone https://github.com/SirVer/ultisnips.git ~/.vim/bundle/ultisnips
 echo '" UltiSnips' >> ~/.vimrc
 echo 'let g:UltiSnipsExpandTrigger="<tab>"' >> ~/.vimrc
 echo 'let g:UltiSnipsJumpForwardTrigger="<c-j>"' >> ~/.vimrc
+echo 'set runtimepath+=~/.vim/vim-snippets/' >> ~/.vimrc
 echo -e '\n' >> ~/.vimrc
 
 # ctrlp
@@ -37,30 +38,46 @@ echo '" solarized' >> ~/.vimrc
 echo 'syntax enable' >> ~/.vimrc
 echo 'set background=dark' >> ~/.vimrc
 echo 'colorscheme solarized' >> ~/.vimrc
-echo -e '\n' >> ~/.vimrc
-
-# powerline
-git clone https://github.com/Lokaltog/powerline ~/.vim/bundle/powerline/
-echo '" Powerline' >> ~/.vimrc
 echo 'set t_Co=256' >> ~/.vimrc
 echo -e '\n' >> ~/.vimrc
 
-# fugitive
+# airline
+# git clone https://github.com/Lokaltog/powerline ~/.vim/bundle/powerline/
+
+# powerline fonts
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+mv PowerlineSymbols.otf ~/.fonts/
+fc-cache -vf ~/.fonts/
+mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+
+git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+
+#echo '" Powerline' >> ~/.vimrc
+echo '" airline' >> ~/.vimrc
+echo 'set laststatus=2' >> ~/.vimrc
+echo "let g:Powerline_symbols = 'fancy'" >> ~/.vimrc
+echo 'let g:airline_powerline_fonts=1' >> ~/.vimrc
+echo -e '\n' >> ~/.vimrc
+
+# fugitive - git glupin
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive/
 
 # supertab
 git clone https://github.com/ervandew/supertab.git ~/.vim/bundle/supertab/
 
-# delimitMate
+# delimitMate - automatic closing of quotes, parenthesis, brackets, etc.
 git clone https://github.com/Raimondi/delimitMate.git ~/.vim/bundle/delimitMate/
 
-# neocomplcache
+# neocomplcache - keyword completion by cache in the current buffer
 git clone https://github.com/Shougo/neocomplcache.vim.git ~/.vim/bundle/neocomplcache
-echo '"neocompletechache\nlet g:neocomplcache_enable_at_startup = 1\n' >> ~/.vimrc
+echo -e '"neocompletechache\nlet g:neocomplcache_enable_at_startup = 1\n' >> ~/.vimrc
 
 # tcomment_vim
 git clone https://github.com/tomtom/tcomment_vim.git ~/.vim/bundle/tcomment_vim
 
+#  syntastic - syntax verifier
+git clone https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
 
 # line numbers
 echo '" numbering' >> ~/.vimrc
@@ -71,7 +88,7 @@ echo -e '\n' >> ~/.vimrc
 echo '" Trailing Whitespaces' >> ~/.vimrc
 echo 'set list' >> ~/.vimrc
 echo 'set listchars=""' >> ~/.vimrc
-echo 'set listchars=tab:\ \' >> ~/.vimrc
+echo 'set listchars=tab:>-' >> ~/.vimrc
 echo 'set listchars+=trail:.' >> ~/.vimrc
 echo 'set listchars+=extends:>' >> ~/.vimrc
 echo 'set listchars+=precedes:<' >> ~/.vimrc
